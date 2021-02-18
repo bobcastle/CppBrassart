@@ -3,8 +3,6 @@
 
 
 
-
-
 void Character::ReceiveDamage(int nbDamage)
 {
 	life -= nbDamage;
@@ -14,26 +12,37 @@ void Character::ReceiveDamage(int nbDamage)
 		life = 0;
 		Death();
 	}
-
 }
 
 void Character::Attack(Character &cible)
 {
 	cible.ReceiveDamage(damage);
+	cout << name << " inflige " << damage << " point de degat a "<< cible.name << endl;
 }
 
 void Character::Death()
 {
-	if (this->life <= 0)
-	{
-		bool isAlive = false;
-		cout << this->name << " est mort";
-	}
+		isAlive = false;
+		cout << name << " est mort";
+
 }
 
 void Character::printStats()
 {
-	cout << "| Nom: " << this->name << "| Vie: " << this->life << "| En vie: " << this->isAlive;
+	cout << "| Nom: " << name << "| Vie: " << life << "| En vie: " << isAlive;
 }
+
+Character::Character()
+{
+}
+
+Character::Character(string pName, int pLife, int pDamage)
+{
+	life = pLife;
+	damage = pDamage;
+	name = pName;
+	cout << name << " apparait !" << endl;
+}
+
 
 

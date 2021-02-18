@@ -8,9 +8,10 @@ class Character
 public :
 
 	string name;
-	int life = 100;
-	int maxlife = 100;
-	int damage = 50;
+	int life;
+	int maxlife ;
+	int damage;
+	int mana;
 	bool isAlive = true;
 
 public :
@@ -19,8 +20,8 @@ public :
 	void Attack(Character &cible);
 	void Death();
 	void printStats();
-
-
+	Character(string pName, int pLife, int pDamage);
+	Character();
 
 
 };
