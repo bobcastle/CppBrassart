@@ -16,14 +16,19 @@ void Character::ReceiveDamage(int nbDamage)
 
 void Character::Attack(Character &cible)
 {
-	cible.ReceiveDamage(damage);
-	cout << name << " inflige " << damage << " point de degat a "<< cible.name << endl;
+	
+	if (cible.isAlive) 
+	{
+		cout << name << " inflige " << damage << " point de degat a " << cible.name << endl;
+		cible.ReceiveDamage(damage);
+	}
+	
 }
 
 void Character::Death()
 {
 		isAlive = false;
-		cout << name << " est mort";
+		cout << name << " est mort" << endl;
 
 }
 

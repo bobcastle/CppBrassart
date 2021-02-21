@@ -11,7 +11,7 @@ class Game
 	public :
 		string playerName;
 		string classe;
-		Warrior player;
+		Character player;
 
 	public :
 		void CreateGame();

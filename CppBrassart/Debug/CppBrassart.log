@@ -1,3 +1,5 @@
 ﻿  Game.cpp
-C:\Users\Kiwi\source\repos\CppBrassart\CppBrassart\Game.cpp(45,35): warning C4554: '|' : vérifiez si la priorité des opérateurs n'est pas une cause possible d'erreur ; utilisez des parenthèses pour rendre les priorités plus claires
+C:\Users\Kiwi\source\repos\CppBrassart\CppBrassart\Game.cpp(47,35): warning C4554: '|' : vérifiez si la priorité des opérateurs n'est pas une cause possible d'erreur ; utilisez des parenthèses pour rendre les priorités plus claires
+  Main.cpp
+  Génération de code en cours...
   CppBrassart.vcxproj -> C:\Users\Kiwi\source\repos\CppBrassart\Debug\CppBrassart.exe
